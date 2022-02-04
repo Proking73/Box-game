@@ -1,0 +1,27 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:hsla(50 50% 5% / 0.75);
+}
+.dotsCont {
+    height:min(80%, 70vw);
+    background: darkgreen;
+    aspect-ratio: 1/1;
+    border-radius:  5%;
+    display: flex;
+}
+.dotsCont>div {
+    display:inline;
+    width:5%;
+    height: 5%;
+    margin:0.1em;
+    aspect-ratio: 1/1;
+    background:blue;
+}
