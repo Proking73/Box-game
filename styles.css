@@ -6,22 +6,34 @@
 body {
     height:100vh;
     display: flex;
+    flex-direction: column;
+}
+
+header {
+    width:100vw;
+    height:30%;
+    position: relative;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background:hsla(50 50% 5% / 0.75);
 }
-.dotsCont {
-    height:min(80%, 70vw);
-    background: darkgreen;
-    aspect-ratio: 1/1;
-    border-radius:  5%;
-    display: flex;
+header>h1 {
+    margin:0.25em;
+    text-align: center;
+    font-size: max(4.25vw, 4.25vh);
+    color:white;
+    z-index: 1;
+    letter-spacing: 0.15ch;
+    font-family: 'Oswald';
 }
-.dotsCont>div {
-    display:inline;
-    width:5%;
-    height: 5%;
-    margin:0.1em;
-    aspect-ratio: 1/1;
-    background:blue;
+header>h1>span {
+    letter-spacing: 0.3ch;
+}
+.background {
+    position:absolute;
+    width:100%;
+    right:0;
+    height:100%;
+    background:url("https://media.globalcitizen.org/thumbnails/b1/0d/b10d523f-3877-470b-8624-13602761a902/extreme-poverty-un-explainer-001.jpg__1600x900_q85_crop_subsampling-2.jpg");
+    filter:blur(3px);
 }
