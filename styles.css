@@ -20,7 +20,7 @@ body {
     background:hsl(330, 100%, 71%);
 }
 ::-webkit-scrollbar {
-    width: 1vw;
+    width: 0.75vw;
 }
 
 ::-webkit-scrollbar-track {
@@ -83,10 +83,10 @@ main>h2 {
     margin: 1.25% 2%;
     position: relative;
     font-family: 'Oswald';
-    font-size:3.75vw;
+    font-size:3.5vw;
 }
 .infowrapper {
-    outline: 0.01vw dashed var(--themecolor);
+    border-left: 0.01vw dashed var(--themecolor);
     overflow-y: scroll;
     width: 70%;
     display:flex;
