@@ -98,8 +98,8 @@ main::after {
     margin: 2em;
     content: " .";
     color: transparent;
-    width: 96vw;
-    background: hsl(0, 0%, 88%);
+    width: 99vw;
+    background: hsl(0, 0%, 58%);
     height: 0.25vh;
     border-radius: 100%;
 }
