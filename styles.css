@@ -87,6 +87,7 @@ main>h2 {
     font-size:3.5vw;
 }
 .infowrapper {
+    overscroll-behavior-y: auto;
     border-left: 0.01vw dashed var(--themecolor, hsl(75, 100%, 40%));
     overflow-y: scroll;
     width: 70%;
@@ -95,15 +96,6 @@ main>h2 {
     flex-direction:column;
     justify-content: flex-start;
 }
-main::after {
-    margin: 2em;
-    content: " .";
-    color: transparent;
-    width: 99vw;
-    background: hsl(0, 0%, 58%);
-    height: 0.25vh;
-    border-radius: 100%;
-}
 .info {
     font-size: 2vh;
     line-height: 2.5ch;
@@ -111,6 +103,43 @@ main::after {
     text-indent: 4ch;
     text-align:justify;
     margin: 3vh 2em;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: hsla(108, 37%, 75%, 0.931);
+    position: absolute;
+    bottom: -7%;
+    height:8%;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+}
+footer::before {
+    align-items: center;
+    top: 0%;
+    position: absolute;
+    content: " ";
+    left: 0;
+    width: 100vw;
+    background: hsl(0, 0%, 58%);
+    height: 0.25vh;
+    border-radius: 100%;
+}
+footer>h1 {
+    height: min-content;
+    text-shadow: -1px 1px hotpink;
+    color: darkblue;
+    font: bold small-caps 2vw arial;
+}
+footer>h1>a {
+    text-decoration: none;
+    color: orange;
+}
+footer>img {
+    width:5%;
 }
 
 @media only screen and (max-width:400px) {
