@@ -58,7 +58,7 @@ header>h1 {
 }
 header>h1>span {
     padding:0 0.25em;
-    border: max(0.1vw, 0.1vh) dashed var(--themecolor);
+    border: max(0.1vw, 0.25vh) dashed var(--themecolor);
     letter-spacing: 0.3ch;
 }
 .background {
