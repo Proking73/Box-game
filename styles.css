@@ -58,7 +58,7 @@ header>h1 {
 }
 header>h1>span {
     padding:0 0.25em;
-    border: min(0.1vw, 0.1vh) dashed var(--themecolor);
+    border: max(0.1vw, 0.1vh) dashed var(--themecolor);
     letter-spacing: 0.3ch;
 }
 .background {
@@ -115,9 +115,6 @@ main::after {
 @media only screen and (max-width:400px) {
     header>h1 {
         font-size:10vw;
-    }
-    header>h1>span {
-        border:0.35vh dashed var(--themecolor);
     }
     main>h2 {
         flex-direction: column;
