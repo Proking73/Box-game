@@ -71,6 +71,35 @@ header>h1>span {
     filter:blur(3px);
     -webkit-filter: blur(3px);
 }
+.contPandS {
+    padding: 0.25%;
+    background: hsla(0, 0%, 100%, 0.75);
+    border-radius: 0 0 5% 5%;
+    border: 0.1vw solid black;
+    z-index: 1;
+    width: 19vw;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    font: bolder 1.75vw arial;
+    right:0;
+    transform: translateY(110%);
+}
+.problemanchor {
+    border-right: 0.1vw dotted black;
+    color:hsl(37, 100%, 50%);
+    padding-right: 2%;
+}
+.problemsolution {
+    color: hsl(241, 100%, 50%);
+}
+.contPandS>a>:hover {
+    color: lightcoral;
+}
+.contPandS>a>:active {
+    color: brown;
+}
+
 main {
     align-items: center;
     flex-direction: column;
