@@ -111,8 +111,8 @@ footer {
     justify-content: space-around;
     background: hsla(108, 37%, 75%, 0.931);
     position: absolute;
-    bottom: -7%;
-    height:8%;
+    bottom: -7vh;
+    height:8vh;
     align-items: center;
     text-align: center;
     width: 100vw;
@@ -130,16 +130,24 @@ footer::before {
 }
 footer>h2 {
     height: min-content;
-    text-shadow: -1px 1px hotpink;
     color: darkblue;
-    font: bold small-caps 2vw arial;
+    font: bold 2vw arial;
 }
 footer>h2>a {
+    text-shadow: 0 0 10px rgb(88, 87, 17), 0 0 4px black;
     text-decoration: none;
     color: orange;
+    text-decoration: underline;
 }
-footer>img {
-    width:5%;
+footer>a {
+    height: 8vh;
+}
+footer>a:hover, footer>*>a:hover {
+    color:lightsalmon;
+}
+
+footer>a>img {
+    height: 100%;
 }
 
 @media only screen and (max-width:400px) {
@@ -157,5 +165,11 @@ footer>img {
     .info {
         text-align: center;
         text-indent: 0;
+    }
+    footer>h2 {
+        font-size: 4vw;
+    }
+    footer>a {
+        display: none;
     }
 }
